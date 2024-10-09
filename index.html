@@ -6,7 +6,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       const xref = document.querySelector('.xref');
       if (xref) {
-        xref.innerHTML = document.location.href;
+        xref.innerHTML = `
+          <div>${document.location.href}</div>
+          <div>${window.location.ancestorOrigin}</div>
+        `;
       }
     });
   </script>
