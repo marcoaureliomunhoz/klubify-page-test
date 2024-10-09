@@ -1,5 +1,14 @@
 <html>
 <body>
-  <h1>Teste</h1>
+  <h1>Olá</h1>
+  <div class='xref'></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const xref = document.querySelector('.xref');
+      if (xref) {
+        xref.innerHTML = document.location.href;
+      }
+    });
+  </script>
 </body>
 </html>
